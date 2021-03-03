@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Practical guidance on how to implement a re-platform | Replatforming Models</title>
+  <meta name="description" content="DfE guide to replatforming models." />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Practical guidance on how to implement a re-platform | Replatforming Models" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="DfE guide to replatforming models." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Practical guidance on how to implement a re-platform | Replatforming Models" />
+  
+  <meta name="twitter:description" content="DfE guide to replatforming models." />
+  
+
+<meta name="author" content="Eugene Chang and Leanne Sunter" />
+
+
+<meta name="date" content="2021-03-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="Considerations.html"/>
+<link rel="next" href="case-studies.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#thanks"><i class="fa fa-check"></i><b>0.1</b> Thanks</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#who-should-read-this-guidance"><i class="fa fa-check"></i><b>1.1</b> Who should read this guidance?</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="Considerations.html"><a href="Considerations.html"><i class="fa fa-check"></i><b>2</b> Considerations to re-platforming</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="Considerations.html"><a href="Considerations.html#benefits-of-re-platforming"><i class="fa fa-check"></i><b>2.1</b> Benefits of re-platforming</a></li>
+<li class="chapter" data-level="2.2" data-path="Considerations.html"><a href="Considerations.html#barriers-to-re-platforming"><i class="fa fa-check"></i><b>2.2</b> Barriers to re-platforming</a></li>
+<li class="chapter" data-level="2.3" data-path="Considerations.html"><a href="Considerations.html#risks-of-re-platforming"><i class="fa fa-check"></i><b>2.3</b> Risks of re-platforming</a></li>
+<li class="chapter" data-level="2.4" data-path="Considerations.html"><a href="Considerations.html#should-you-re-platform"><i class="fa fa-check"></i><b>2.4</b> Should you re-platform?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="practical.html"><a href="practical.html"><i class="fa fa-check"></i><b>3</b> Practical guidance on how to implement a re-platform</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="practical.html"><a href="practical.html#pre-requisites"><i class="fa fa-check"></i><b>3.1</b> Pre-requisites</a></li>
+<li class="chapter" data-level="3.2" data-path="practical.html"><a href="practical.html#design-choices"><i class="fa fa-check"></i><b>3.2</b> Design choices</a></li>
+<li class="chapter" data-level="3.3" data-path="practical.html"><a href="practical.html#testing-and-version-control"><i class="fa fa-check"></i><b>3.3</b> Testing and Version Control</a></li>
+<li class="chapter" data-level="3.4" data-path="practical.html"><a href="practical.html#documentation-and-outputs"><i class="fa fa-check"></i><b>3.4</b> Documentation and Outputs</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="case-studies.html"><a href="case-studies.html"><i class="fa fa-check"></i><b>4</b> Case Studies</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="case-studies.html"><a href="case-studies.html#schools-block-national-funding-formula-model-sb-nff"><i class="fa fa-check"></i><b>4.1</b> Schools Block National Funding Formula Model (SB NFF)</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="case-studies.html"><a href="case-studies.html#model-details"><i class="fa fa-check"></i><b>4.1.1</b> Model details</a></li>
+<li class="chapter" data-level="4.1.2" data-path="case-studies.html"><a href="case-studies.html#replatform-details"><i class="fa fa-check"></i><b>4.1.2</b> Replatform details</a></li>
+<li class="chapter" data-level="4.1.3" data-path="case-studies.html"><a href="case-studies.html#benefits"><i class="fa fa-check"></i><b>4.1.3</b> Benefits</a></li>
+<li class="chapter" data-level="4.1.4" data-path="case-studies.html"><a href="case-studies.html#practical-tips-from-the-team"><i class="fa fa-check"></i><b>4.1.4</b> Practical tips from the team</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="case-studies.html"><a href="case-studies.html#student-loan-earnings-model"><i class="fa fa-check"></i><b>4.2</b> Student Loan Earnings Model</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="case-studies.html"><a href="case-studies.html#model-details-1"><i class="fa fa-check"></i><b>4.2.1</b> Model details</a></li>
+<li class="chapter" data-level="4.2.2" data-path="case-studies.html"><a href="case-studies.html#replatform-details-1"><i class="fa fa-check"></i><b>4.2.2</b> Replatform details</a></li>
+<li class="chapter" data-level="4.2.3" data-path="case-studies.html"><a href="case-studies.html#benefits-1"><i class="fa fa-check"></i><b>4.2.3</b> Benefits</a></li>
+<li class="chapter" data-level="4.2.4" data-path="case-studies.html"><a href="case-studies.html#technical-tips"><i class="fa fa-check"></i><b>4.2.4</b> Technical tips</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="stakeholder.html"><a href="stakeholder.html"><i class="fa fa-check"></i><b>5</b> Stakeholder FAQs</a></li>
+<li class="chapter" data-level="6" data-path="further-reading.html"><a href="further-reading.html"><i class="fa fa-check"></i><b>6</b> Further Reading</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="further-reading.html"><a href="further-reading.html#internal-resources"><i class="fa fa-check"></i><b>6.1</b> Internal resources</a></li>
+<li class="chapter" data-level="6.2" data-path="further-reading.html"><a href="further-reading.html#external-resources"><i class="fa fa-check"></i><b>6.2</b> External resources</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Replatforming Models</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="practical" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Practical guidance on how to implement a re-platform</h1>
+<p>Once you have determined that your model should be ported into a code-based format there are a number of things you should plan and consider as you start to scope your project. We’ll provide some general guidance here with further practical tips in the <a href="case-studies.html#case_studies">case studies</a> section.</p>
+<div id="pre-requisites" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Pre-requisites</h2>
+<p>To ensure a successful outcome it’s essential that several areas are addressed before re-platforming begins. Perhaps most importantly, you will need <strong>buy-in from stakeholders</strong>. <a href="#stakeholders">This</a> section includes some of the most commonly asked questions from Stakeholders and as this could be one of the most difficult challenges, engaging with them early is likely to be beneficial.</p>
+<p>Ahead of carrying out any re-platforming, you should identify who your <strong>end users</strong> are. Are they analysts, managers, policy stakeholders or a combination of those?The answer to this question might influence the language you decide to use and the type of output(s) you decide to create. Thinking about this before you start your re-platforming will help you to shape the redevelopment in the best way. It should be one of the first steps of your planning as the answer will impact your requirements, which will in turn feed into your resource and skill requirements.</p>
+<p>Once you have secured Stakeholder buy-in and identified your end-users, ensuring there is sufficient time and appropriate resource dedicated to the project is vital. As with any piece of analysis, a rushed job is more likely to be a poor job. This could mean postponing Business As Usual work, existing model updates and/or securing additional resource. But, however tempting it might be to ‘contract out’ the re-platforming to experts who then hand ‘it’ over, this is <em>not</em> recommended as without <em>a lot</em> of collaboration, you’re likely to end up with a team who do not understand the model. Therefore, the analysts who will carry out the re-platform need to have sufficient software knowledge for the chosen platform. This might mean they need to undertake L&amp;D activities are needed and/or engage with experts and relevant groups for advice and support (for example, the DfE Analyst Network Data Science channel or Python Team), particularly in the event that any difficulties are encountered.</p>
+</div>
+<div id="design-choices" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Design choices</h2>
+<p>Choosing a <strong>language</strong> to re-platform into should be one of your earliest considerations after deciding to re-platform. You will need to choose a language that allow you to deliver the required outputs but also one with which your team have the skills to code in, or the ability to learn. Within DfE, SQL is already well established, whilst R is becoming increasing popular and is very well supported with <a href="https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Analytics-Academy.aspx">Analytics Academy</a> and a number of willing experts across the Department who regularly provide support and advice through the DfE Analyst Network. Python may also be a consideration and whilst it is not (yet) as popular as R within DfE there is an active community and plenty of external resources online.</p>
+<p>As with lots of code-based analysis, it is likely that the code <strong>design</strong> will evolve as the re-platform commences. However, having a clear set of objectives and required outputs from the outset is critical to ensuring that the re-platformed model is fit for purpose. This will also help to avoid scope creep and reduce the likelihood of the re-platformed model becoming unnecessarily complex.</p>
+<p>For <strong>clarity</strong> you will need to think carefully about how the re-platformed model will be structured so that it’s efficient and follows best practice. In fact, you may specifically want to avoid replicating the existing processes and mechanics of the non-code based model in order to improve the efficiency of the re-platformed model.</p>
+<p>We’ve already covered the benefits of writing clear, well structured code <a href="https://dfe-analytical-services.github.io/good-code-practice/fundamentals.html">elsewhere</a> and a re-platforming project is no different to any other code based project in that respect. However, depending on the complexity of the model, in addition to ensuring that code is well structured, consistent and commented appropriately, it may also be beneficial to provide a schematic diagram of how the model works, such as the one below.<br />
+<img src="repayment_model_flow.jpg" alt="Repayment model schematic." /></p>
+<p>As we’ll cover shortly, well documented re-usable components will help to ensure that the code is clear and easy to follow. This should ensure it’s easy for others to pick up the model and update or develop it more readily in future as well as making the model as transparent as possible should you wish to go into more detail with stakeholders.</p>
+<p>There is a strong likelihood that if you’re undertaking a re-platforming project that the existing model may be repeating the same formulae or data processing numerous times. Whilst you could write some code that mirrors those processes, writing (and clearly documenting) bespoke functions will help to achieve reduced run-times and the flexibility to run a greater range of scenarios and/or uncertainty testing.</p>
+<p>Whether the existing model takes account of uncertainty or not, we would also strongly advise you to think about building-in uncertainty (where appropriate) when you re-platform a model. There are various techniques to consider and some of these are covered in more detail as part of the <a href="https://analystsuncertaintytoolkit.github.io/UncertaintyWeb/chapter_3.html">Uncertainty Toolkit for Analysts in Government</a>.</p>
+</div>
+<div id="testing-and-version-control" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Testing and Version Control</h2>
+<p>There is more information about how to conduct <strong>testing</strong> in the <a href="https://dfe-analytical-services.github.io/good-code-practice/testing.html">DfE Good Code Practice</a> but in addition to unit testing, we would recommend ensuring that the re-platformed model outputs match the previous model before you start developing the model further. Ensuring that the re-platformed model can produce equivalent or comparable outputs to the previous model will give stakeholders confidence in the re-platformed model as you will be able to demonstrate that the re-platformed model can reproduce the existing model.</p>
+<p>As we’ve covered <a href="https://dfe-analytical-services.github.io/good-code-practice/VC.html">elsewhere</a>, <strong>version control</strong> is a really important aspect of any coding project but it particularly adds value when teams are working collaboratively. Using Git is far superior to keeping local scripts and manually amending file names and there is unlikely to be a better time to embed Git into your ways of working than when you move away from Excel to re-platform a model. In DfE, repos within Azure DevOps are the existing code version control tool of choice and there are several resources, including how to access and use DevOps, listed in the <a href="further-reading.html#further_reading">Further Reading</a> section.</p>
+<p>Whatever the Version Control tool used, it is advisable to create a repository for the project and for all collaborators to use the repo to manage their code. An ideal workflow is where the analyst creates a <em>pull request</em> (AKA <em>merge request</em> in GitLab) to merge their code changes into a clean master version of the code and the approver (quality assurer or designated collaborators) then evaluates whether the change is appropriate and either approves or asks for edits to be made.</p>
+<p>Within Azure DevOps repos, you can <a href="https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops">set branch policies</a> such as a setting minimum number of reviewers and/or automatically including code reviews.</p>
+<p>Once the re-platformed model is in use, new branches should be created to develop features or changes and then these should be merged back into the master branch with a pull (merge) request to seek approval from the appropriate person.</p>
+</div>
+<div id="documentation-and-outputs" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Documentation and Outputs</h2>
+<p>As with any model, good <strong>documentation</strong> is a key part of knowledge management; particularly to ensure that other colleagues can understand, use and update the model and so that any data and/or assumptions are recorded clearly. <strong>QA reports</strong> can also be automatically generated so these should be a key consideration when thinking about outputs too, for example producing basic summary statistics, a list of checks or unit tests that have been carried out or showing totals through various steps of a process. There are various packages are available to produce documentation depending on the platform used and type of outputs needed.</p>
+<p>In R, Markdown can be used to create html <strong>outputs</strong> with dynamic visuals and code snippets and this can be taken one step further and published via Bookdown. This is often done to produce reports or guidance once the code has been completed as separate .Rmd scripts will be needed which means that if you make changes to R scripts you may also need to duplicate these in .Rmd files for example.</p>
+<p><a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html">ROxygen</a> overcomes the above issue as you can comment scripts as you go along and produce outputs from the scripts. It readily supports documentation for R packages so this may be useful if you are creating bespoke functions and/or packages. If you need to present a lot of code and less text/explanation, you may also want to consider using the <a href="https://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/">Spin function within the Knitr package</a> or rendering directly from a script using the “compile notebook” button in R Studio.</p>
+<p>When considering outputs, think about what your users need. For example, an interactive dashboard output or RShiny App, such as <a href="https://cars-dashboard-dwzndgiyya-ez.a.run.app/">this</a> one, would work well for scenario testing, whereas figures needed for a Business Case could be output to an Rmarkdown document or even a simple table or .csv file. Whatever the final outputs are, you should also think about interim steps within your script as it’s likely your users would previously have worked through a spreadsheet to look at parts of the calculation(s). A comprehensive Rmarkdown with different sections replicating the Excel checkpoints would be a good way to demonstrate what your script is doing and give Stakeholders confidence in the model.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="Considerations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="case-studies.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
