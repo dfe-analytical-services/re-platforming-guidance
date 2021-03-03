@@ -1,0 +1,57 @@
+# Stakeholder FAQs {#stakeholder}
+
+This section covers the key questions Stakeholders may have over the course of a re-platforming project.  It is written primarily for Stakeholders but analysts may also find it useful to think about the questions their Stakeholders may have and how they can work together to develop confidence and secure buy-in to the re-platformed model.
+
+**What _is_ re-platforming?**
+
+Re-platforming is the process of converting a model from a piece of software to a code-based platform.  In practice, that usually means turning an Excel model into one which runs using code.  Within DfE, the most commonly used coding languages are R, SQL and Python and a re-platform may involve a combination of the two, particularly R and SQL together.   
+
+**Do I need to be able to understand code to understand a re-platformed model?**
+
+Absolutely not.  Although the calculations will be run using code, there are various user-friendly output formats that can be generated which will allow analysts to walk you through what the model is doing at various stages and what the outputs of a model are at those stages too.
+
+**How will I know that the model is doing what it should do?**
+
+There are a few things you can do to check this, including:
+
+* asking for a **dual-build**.  This should demonstrate that the re-platformed model matches and can produce equivalent outputs to the previous model.  However, it's important to be aware that there may be times when the re-platformed model may not be an exact match.  For example, if either the model needs to be updated and/or the re-platform needs to be built differently or incorporate changes. In such instances, you can ask analysts to reconcile and explain any differences to ensure that the two models are aligned.
+* asking for breakdowns of outputs at key steps within the model to ensure that interim figures are in line with expectations
+* asking lots of the same questions you would usually ask around assumptions
+* sense checking outputs, comparing outputs to other data and your own expectations
+
+**What do we mean by automated outputs?** 
+
+What we mean by an 'automated output' is any output that is created without any additional manual intervention when the script is run such as text-based reports, a slide-deck or a html file.  In short, if there is something that you need to see on a regular basis, code can be written which produces this every time the script is run or on demand.
+
+**What things can I look at myself?**
+
+In the same way that an Excel model might have an output sheet with key figures, tables and/or charts, these outputs can produced by a script-based model too (as set out above).  Similarly, if there are intermediate steps in an Excel model that you use as a sense-check of for other purposes, these can be generated either as individual outputs or as part of a package of outputs.  There are several added benefits of producing these outputs directly from the re-platformed model including:
+
+* more interactive outputs than Excel, for example you may be able to hover over charts and tables for further information or use toggles and drop downs to visualise different options without having the model itself
+* reduced risk of copy and paste or data source errors as outputs produced directly from the model
+* autochecks can be included which highlight or flag issues, for example if a figure is outside an agreed range or tolerance
+* inclusion of key parameters, model information for easy audit trails
+
+**What are the main benefits for me as a Stakeholder?**
+
+As we cover elsewhere within this guide, there are numerous benefits of re-platforming but as a Stakeholder it is _likely_ to mean that **robust QA** is in place and can be demonstrated to you quickly and easily.  That in turn means that analysts can spend more time on complex problems and other analysis, instead of on routine checks and it _should_ mean that you can still be as, if not more, confident that the model is as accurate and error-free as possible.
+
+Re-platforming _should_ lead to much **quicker** run-times so you're likely to get answers to your questions sooner.  This is true for data refreshes as well, and since QA should already be built in, this means that *when done well*, updating the model and producing outputs can happen at the click of a button!
+
+Automated reports and **outputs** can also be set up which means you can expect to see consistent reporting, and where relevant, interact with the outputs through dashboards or Apps.  In addition to all of the above benefits, there is also the potential to include more sophisticated analysis and incorporate **uncertainty** much more easily within a code based model.  If this has been built in, it means you may be able to ask more challenging questions and develop your evidence base even further.
+
+**What are the risks?**
+
+As a Stakeholder, the biggest risk is likely to be that the re-platform takes longer than expected.  That could be due to unforeseen challenges when writing the script, scope creep or both.  This could occur as part of any new piece of analysis and therefore the advice and mitigations are the same: agree a clear specification at the outset and have regular discussions on progress as this should help you to work together with analysts to deliver the re-platformed model to schedule.
+
+You might be tempted to bring in additional resource to deliver the re-platform and leave existing analysts able to fulfill their current roles. We would advise against this as there is a risk that the new model will not be as well understood by the team who will own it which means you won't reap the key benefit of re-platforming.
+
+The next biggest risk is that the re-platform might not deliver all of the benefits outlined here, particularly if there are delays which mean the scope has to be revisited in order to deliver a minimum viable product on schedule.  Over time, as with other types of models, additional features and functionality can be added and developed which should enhance the model and realise more of the benefits of a script-based model.
+
+**How long will the re-platforming take?**
+
+This will vary from model to model and is dependent on a number of factors, such as the level of experience and available resource.  However, if you're able to hold off commissioning analysis or can postpone BAU work it's likely to be delivered sooner as analysts can focus more of their time on the re-platform. 
+
+
+
+

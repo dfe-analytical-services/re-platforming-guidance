@@ -1,0 +1,93 @@
+# Considerations to re-platforming{#Considerations}
+
+In addition to the many advantages in porting models into open source software, there are also a range of barriers. In this section we discuss the benefits, barriers and risks arising from this process. We also highlight instances where porting a model may not be the optimal solution and discuss obtaining buy-in from stakeholders.
+
+## Benefits of re-platforming
+
+In short, there are two overarching benefits to re-platforming:
+
+1:  [Reproducible Analytical Pipeline (RAP)](https://ukgovdatascience.github.io/rap_companion/)
+
+2:  Speed
+
+A Reproducible Analytical Pipeline is hugely beneficial and brings numerous benefits, including:
+
+* accuracy
+* useability
+* readability
+* transparency
+* automated version control
+* reduced duplication
+* easier collaboration
+* improved data management
+* ease of updating documentation
+* easy to follow audit trail
+
+Although a significant amount of time is spent quality assuring spreadsheets, human errors are common.  Evidence[^1] suggests that whilst errors are rare on a per-cell basis, large programmes are likely to contain incorrect figures, these are extremely difficult to detect and correct and there is a tendency to be overconfident in the accuracy of spreadsheets.  Re-platforming reduces the risk of errors, supports and enables easier version control processes (for example through “Git” or other tools) and collaboration.  Clear, well structured and commented code is succinct, easy to understand and update therefore making it quicker and easier to update and quality assure.  When done properly, re-platforming means that quality assurance processes are embedded **throughout** the pipeline as opposed to a time-consuming and manual task at the end of a project or model completion.  
+
+Lots of the benfits of RAP lead to the second overarching benefit of re-platforming:  **speed**. A code-based approach can quickly and repeatedly access relevant data, perform relevant calculations and produce a variety of outputs and documentation **and** perform built-in checks.  Automating these processes frees up time for people to focus on more challenging and interesting tasks that are likely to add more value in the long run.
+
+A final potential benefit of re-platforming is that it can be used to develop skills for individuals and within teams.  Re-platforming an existing model that's already been scoped, designed, tested and has clear outputs is an ideal way for someone to develop coding skills whilst adding value to the team.
+
+**For stakeholders**, there are several benefits, some of which are outlined below and covered in more detail [here](#stakeholders):
+
+* Reduced run times and quicker updates result in more time for analysts to focus on more complex problems.
+* Risks are reduced through robust QA
+* Outputs can be produced rapidly  
+* When done well, there is the potential for greater scenario testing across assumptions due to increased versatility of the model.
+ 
+## Barriers to re-platforming
+
+The level and mixture of skills within a team/unit/division can be a barrier, with models often built in a ‘common denominator’ software in order to ensure everyone within a team is able to use and update it.
+
+It may be particularly challenging to upskill individuals in relevant languages and/or re-platform a model alongside Business As Usual (BAU) work.  Carving out enough time to re-platform and/or to learn new languages and/or techniques is difficult and often the biggest challenge.  But as discussed shortly, re-platforming will often reap time-saving rewards in the longer term. 
+
+There may also be barriers to re-platforming when a model needs to be shared and/or used by non-technical colleagues.  This may prevent re-platforming but there may be ways in which the model could be re-platformed with a user interface that would facilitate sharing and/or use by someone without the relevant technical skills.
+
+For very simple models, there may be no clear need or benefit to re-platforming and this should be considered before time is invested in re-platforming unnecessarily. However, for more complex models, complexity may also be a barrier to re-platforming.  All of the more complex models listed below are likely to take more time to build and may require further upskilling in order to incorporate requirements, but there are likely to be many benefits to re-platforming complex models such as these.
+
+* A stock/flow model with a small number of stocks and flows
+* A linear regression model
+* A complex forecasting model involving multiple steps
+*	A stochastic individual level model with data preparation, status prediction via logistic regression, then using the status to predict a linear range
+
+
+## Risks of re-platforming
+
+There are several risks associated with re-platforming.  We'll cover each of these in a little more detail below:
+
+* **What happens if you make a model and it's not made well?**
+You may have invested a significant amount of time and resource and produced something that is no better or saves little/no time compared to the existing model.  This is a possibility but with clear mitigations in place this can be avoided.  Carefully managing the rebuild to ensure that you have a clear scope and specification, structuring the re-platformed model well and ensuring you have the right skill sets in place should help to prevent this. 
+
+*	**Does a team then constantly get in a cycle of remaking the model each year?**
+This is a possibility, but this is already a common issue with Excel-based models.  However, with a code-based approached, existing code that has already been reviewed will need minimal scrutiny and only changes and/or new code will need full QA so this may not be as labour intensive as a non code-based model rebuild.
+
+* **What if all the personnel with technical skills leaves the team?** 
+Ensuring that you have good documentation in place as part of the re-platforming process should go a long way to mitigate against this risk.  In practice that means that code will need to be well structured and well commented and that technical notes and user guides are completed as part of the re-platforming process, as a minimum.  
+
+It is worth nothing that as with the previous risk, this could also apply to a non code-based model but the ease with which documentation and guides can be produced for code-based models is such that this shouldn't be difficult to overcome.
+
+* **Does it change the people you employ?**
+Re-platforming doesn't necessarily mean that you need to employ different people. Based on experiences at DfE to date, there is a strong appetite for analysts to develop and expand their programming skills and an equally good culture of knowledge sharing which underpins and supports that development for individuals. Whilst we have numerous Excel-based and other non code-based models, working on code-based models is an enticing propostion for lots of analysts therefore re-platforming could make it easier to recruit in future as a code-based approach may appeal to more candidates. 
+
+* **Will a re-platformed model be a black box that is difficult to explain to stakeholders?**
+Providing that the model is well commented and well documented, the risk of it being a black box to other analysts is low and as discussed above this risk can be mitigated by developing appropriate user guides and technical notes.  It *may* be more difficult to walk stakeholders through the model initially, particularly if they are used to being able to scrutinise an Excel workbook.  However, by presenting and sharing intermediate information though, for example, R Markdown outputs, at different stages of the model to demonstrate key outputs this can be overcome.  
+
+## Should you re-platform? 
+
+Before embarking on re-platforming, now that you know about the risks and potential barriers, it is important to consider whether re-platforming is really the right choice for your model. 
+
+Some important questions to ask yourself before moving ahead include: 
+
+* How complex is the model? 
+* How frequently is the data refreshed?
+* How frequently do the data inputs change (formats)? 
+* How many different data inputs are there? 
+* How frequently do the required outputs change? 
+* Who needs to use the model?
+
+If a model is very simple and quick to update once a year with a single, very consistent data input and a fixed output, it may not be sensible to spend time re-platforming.  However, even a simple model that requires frequent data refreshes could be considered for re-platforming.  Continuing along that spectrum, a more complex model with multiple inputs would definitely be a strong candidate for re-platforming.   
+
+Ultimately, it’s about weighing up whether the investment in the re-platforming process is worthwhile.  In a lot of instances this will be the case, even for simple models where the main benefit of re-platforming would be to improve QA.  However, for some of the simplest models, or models which need to be used by a non-technical person, it might be necessary to keep the model in Excel.   
+
+[^1]:  [_Panko_, 2016](https://arxiv.org/abs/1602.02601)

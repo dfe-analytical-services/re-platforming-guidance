@@ -1,0 +1,9 @@
+book_filename: "A Guide to Replatforming"
+language:
+  ui:
+    chapter_name: "Chapter "
+repo: https://github.com/etychang/replatforming-guidance
+delete_merged_file: true
+output_dir: "docs"
+
+ 

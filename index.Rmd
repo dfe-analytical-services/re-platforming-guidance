@@ -1,0 +1,27 @@
+--- 
+title: "Replatforming Models"
+author: "Eugene Chang and Leanne Sunter"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook: default
+documentclass: book
+#bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "DfE guide to replatforming models."
+---
+
+# Preface {-}
+
+This guide has been developed based on examples of replatforming analytical models predominantly from Excel into R within the Department for Education.  It is intended to be a living document so if you have any comments or suggestions please contact the [Model Improvement and Assurance Unit](modellingandqa@Educationgovuk.onmicrosoft.com).  
+
+##  Thanks
+
+The authors would like to thank the following people for their contribution to this document.
+
+* DfE: Rosie Amery, Nicky Brassington, Jack Shaw, Niall Taylor, Jon Tecwyn, Zach Waller.
+* BEIS: Ian Mitchell, Aubrey Kendrick, Alec Waterhouse.
+* GDS: Duncan Garmonsway.
+
+In particular, Elliott White and Stuart Andrews at NAO for initial discussions.

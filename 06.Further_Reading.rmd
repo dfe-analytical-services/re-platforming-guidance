@@ -1,0 +1,20 @@
+#  Further Reading{#further_reading}
+
+##  Internal resources
+* [DfE Good Code Practice](https://dfe-analytical-services.github.io/good-code-practice/)
+
+* [DevOps for Analysis](https://dfe-analytical-services.github.io/vsts-for-analysis/)
+
+* [Analytics Academy](https://educationgovuk.sharepoint.com/sites/sarpi/g/SitePages/Analytics-Academy.aspx)
+
+## External resources
+
+* [Reproducible Analytical Pipeline (RAP)](https://ukgovdatascience.github.io/rap_companion/)
+
+* [RAP MOOC](https://www.udemy.com/course/reproducible-analytical-pipelines/)
+
+* [Setting branch policies in DevOps](https://docs.microsoft.com/en-us/azure/devops/repos/git/branch-policies?view=azure-devops)
+ 
+* [ROxygen](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html)
+
+* [Spin function within the Knitr package](https://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/)

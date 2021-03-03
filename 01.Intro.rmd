@@ -1,0 +1,20 @@
+# Introduction
+
+Over recent years Government departments have increasingly been using open source programming languages to build and run mathematical models, as well as conduct data analysis. This move towards creating reproducible workflows has a range of benefits but has resulted in a situation where some models are now being run in this new environment, whilst other older and more established models are still being run and maintained via spreadsheets or proprietary software. In this document we provide guidance on how you can determine if it would be beneficial for you to re-platform your model and give practical tips and case studies on how you can approach the move into open source software.
+
+##  Who should read this guidance?
+
+This guidance is primarily aimed at analysts considering re-platforming a model, however stakeholders who are interested in understanding the benefits and risks of re-platforming may also find this helpful, particularly the Stakeholder FAQs section. It is specifically aimed at the task of rewriting a model in a new language, which has subtle, yet important differences from a regular data analysis project. 
+
+This guidance **does not** provide details on how to learn to code or how your code should be Quality Assured but we have included some useful links throughout and provided [further reading](#further_reading). 
+
+The contents of this document have mainly been compiled from case studies of rewriting Excel models to R within the Department for Education, although the principles discussed still apply to other software languages and Departments.
+
+This guidance contains the following sections:
+
+1.	Introduction
+2.  [Considerations to re-platforming](#Considerations) 
+3.	[Practical guidance on how to implement a re-platform](#practical)
+4.	[Case studies](#case_studies)
+5.  [Stakeholder FAQs](#stakeholder)
+6.	[Further reading](#further_reading)
