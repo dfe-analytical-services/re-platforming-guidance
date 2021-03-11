@@ -24,7 +24,7 @@
 <meta name="author" content="Eugene Chang and Leanne Sunter" />
 
 
-<meta name="date" content="2021-03-03" />
+<meta name="date" content="2021-03-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -189,7 +189,7 @@
 <p>They started by copying the workflow from the existing implementation<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> - following the logic of calculation steps displayed within the cell formulae of the Excel spreadsheet, and incrementally ported each calculation step of the methodology across.</p>
 <p>As part of the re-platform, lookup tables from Excel were exported as datasets but external SQL databases were queried directly from the re-platformed model. This brought several benefits including ensuring changes to the code were only needed in one place, reducing the risk of copying and pasting errors by accessing the data directly and allowing the entire dataset to be used within the model, instead of only a small sample.</p>
 <p>The team used version control within an Azure DevOps repo to carry out continuous code review during development. This meant that quality assurance occurred incrementally - potentially eliminating the need for a detailed ‘full’ quality assurance after the re-platform was completed. However, wider <a href="https://dfe-analytical-services.github.io/good-code-practice/testing.html#unit-testing">unit testing</a> may have been beneficial to provide assurance of the end to end process.</p>
-<p>One recurring issue was whether the model methodology should be improved at the point of the re-platform, or whether it should be a like-for-like implementation, with future scope for model methodology improvement. It was decided to keep a lik-for-like implementation to ensure that the replatformed model behaved correctly, although the tradeoff was a slower timeline for model improvement.</p>
+<p>One reocurring issue was whether the model methodology should be improved at the point of the re-platform, or whether it should be a like-for-like implementation, with future scope for model methodology improvement. It was decided to keep a like-for-like implementation to ensure that the replatformed model behaved correctly, although the tradeoff was a slower timeline for model improvement.</p>
 <p>The re-platform was carried out prior to writing documentation. It was unclear to the team whether it was more advantageous to document along the way given the analyst time available. In hindsight this may have been a better option as it would mean analysts documenting each section they had replatformed.</p>
 </div>
 <div id="benefits-1" class="section level3" number="4.2.3">
