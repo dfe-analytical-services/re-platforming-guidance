@@ -3,13 +3,13 @@ title: "Replatforming Models"
 author: "Eugene Chang and Leanne Sunter"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output:
-  bookdown::gitbook: default
+output: bookdown::gitbook
 documentclass: book
 #bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "DfE guide to replatforming models."
+favicon: pictures/qa_logo.png
 ---
 
 # Preface {-}

@@ -24,16 +24,16 @@
 <meta name="author" content="Eugene Chang and Leanne Sunter" />
 
 
-<meta name="date" content="2021-03-11" />
+<meta name="date" content="2021-08-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  
+  <link rel="shortcut icon" href="pictures/qa_logo.png" type="image/x-icon" />
 <link rel="prev" href="practical.html"/>
 <link rel="next" href="stakeholder.html"/>
-<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,11 +51,10 @@
 
 
 
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
@@ -68,6 +67,9 @@
       <nav role="navigation">
 
 <ul class="summary">
+<li class="toc-logo"><a href="./"><img src="pictures/qa_logo.png"></a></li>
+
+<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
 <ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#thanks"><i class="fa fa-check"></i><b>0.1</b> Thanks</a></li>
@@ -113,6 +115,8 @@
 <li class="chapter" data-level="6.1" data-path="further-reading.html"><a href="further-reading.html#internal-resources"><i class="fa fa-check"></i><b>6.1</b> Internal resources</a></li>
 <li class="chapter" data-level="6.2" data-path="further-reading.html"><a href="further-reading.html#external-resources"><i class="fa fa-check"></i><b>6.2</b> External resources</a></li>
 </ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
 
       </nav>
@@ -130,6 +134,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
+<link href="style.css" rel="stylesheet">
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="pictures/hero_img.png">
+</div>
 <div id="case_studies" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Case Studies</h1>
 <p>The case studies included in this guide were identified through a cross-Department working group. This covered analysts who were new to code-based models who had to learn R and ask experts to help up to those who were already experts in this area so we hope that the case studies showcased will provide useful learning points for everybody, no matter where you are in your learning journey. We hope to include additional case studies in future so please <a href="mailto:modellingandqa@Educationgovuk.onmicrosoft.com">get in touch</a> if you would like to add yours!</p>
@@ -186,7 +194,7 @@
 <div id="replatform-details-1" class="section level3" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> Replatform details</h3>
 <p>The re-platform took place over phases by a small team of analysts - all quite new to the model but proficient in R and other coding languages.</p>
-<p>They started by copying the workflow from the existing implementation<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> - following the logic of calculation steps displayed within the cell formulae of the Excel spreadsheet, and incrementally ported each calculation step of the methodology across.</p>
+<p>They started by copying the workflow from the existing implementation<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> - following the logic of calculation steps displayed within the cell formulae of the Excel spreadsheet, and incrementally ported each calculation step of the methodology across.</p>
 <p>As part of the re-platform, lookup tables from Excel were exported as datasets but external SQL databases were queried directly from the re-platformed model. This brought several benefits including ensuring changes to the code were only needed in one place, reducing the risk of copying and pasting errors by accessing the data directly and allowing the entire dataset to be used within the model, instead of only a small sample.</p>
 <p>The team used version control within an Azure DevOps repo to carry out continuous code review during development. This meant that quality assurance occurred incrementally - potentially eliminating the need for a detailed ‘full’ quality assurance after the re-platform was completed. However, wider <a href="https://dfe-analytical-services.github.io/good-code-practice/testing.html#unit-testing">unit testing</a> may have been beneficial to provide assurance of the end to end process.</p>
 <p>One reocurring issue was whether the model methodology should be improved at the point of the re-platform, or whether it should be a like-for-like implementation, with future scope for model methodology improvement. It was decided to keep a like-for-like implementation to ensure that the replatformed model behaved correctly, although the tradeoff was a slower timeline for model improvement.</p>
@@ -221,8 +229,8 @@
 </div>
 <div class="footnotes">
 <hr />
-<ol start="1">
-<li id="fn1"><p>This may have been done differently if re-platforming based directly on mathematical formulae rather than from an implementation.<a href="case-studies.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<ol start="2">
+<li id="fn2"><p>This may have been done differently if re-platforming based directly on mathematical formulae rather than from an implementation.<a href="case-studies.html#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
