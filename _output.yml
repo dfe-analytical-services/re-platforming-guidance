@@ -4,7 +4,10 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: section
       before: |
         <li class="toc-logo"><a href="./"><img src="pictures/qa_logo.png"></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    download: [["A-Guide-to-Replatforming.pdf", "PDF"]]
+    
