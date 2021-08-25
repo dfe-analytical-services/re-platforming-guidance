@@ -147,6 +147,10 @@
 <p>In short, there are two overarching benefits to re-platforming:</p>
 <p>1: <a href="https://ukgovdatascience.github.io/rap_companion/">Reproducible Analytical Pipeline (RAP)</a></p>
 <p>2: Speed</p>
+<div class="infoboxblue info">
+<p><strong>DEFINITION</strong></p>
+<p>Reproducible Analytical Pipelines aim to speed up and instill confidence in analytical and statistical processes. This usually involves using open source tools to recreate part of a model so that it can be easily be reproduced, tested and audited.</p>
+</div>
 <p>A Reproducible Analytical Pipeline is hugely beneficial and brings numerous benefits, including:</p>
 <ul>
 <li>accuracy</li>
@@ -161,9 +165,15 @@
 <li>easy to follow audit trail</li>
 </ul>
 <p>Although a significant amount of time is spent quality assuring spreadsheets, human errors are common. Evidence<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> suggests that whilst errors are rare on a per-cell basis, large programmes are likely to contain incorrect figures, these are extremely difficult to detect and correct and there is a tendency to be overconfident in the accuracy of spreadsheets. Re-platforming reduces the risk of errors, supports and enables easier version control processes (for example through “Git” or other tools) and collaboration. Clear, well structured and commented code is succinct, easy to understand and update therefore making it quicker and easier to update and quality assure. When done properly, re-platforming means that quality assurance processes are embedded <strong>throughout</strong> the pipeline as opposed to a time-consuming and manual task at the end of a project or model completion.</p>
-<p>Lots of the benfits of RAP lead to the second overarching benefit of re-platforming: <strong>speed</strong>. A code-based approach can quickly and repeatedly access relevant data, perform relevant calculations and produce a variety of outputs and documentation <strong>and</strong> perform built-in checks. Automating these processes frees up time for people to focus on more challenging and interesting tasks that are likely to add more value in the long run.</p>
+<p>Lots of the benefits of RAP lead to the second overarching benefit of re-platforming: <strong>speed</strong>. A code-based approach can quickly and repeatedly access relevant data, perform relevant calculations and produce a variety of outputs and documentation <strong>and</strong> perform built-in checks. Automating these processes frees up time for people to focus on more challenging and interesting tasks that are likely to add more value in the long run.</p>
 <p>A final potential benefit of re-platforming is that it can be used to develop skills for individuals and within teams. Re-platforming an existing model that’s already been scoped, designed, tested and has clear outputs is an ideal way for someone to develop coding skills whilst adding value to the team.</p>
-<p><strong>For stakeholders</strong>, there are several benefits, some of which are outlined below and covered in more detail <a href="#stakeholders">here</a>:</p>
+<div class="infoboxpurple quote">
+<p><em>“At any point in the future we should be able to look back at this work and be able to reproduce everything that we have done today - something that is difficult with manual/semi-manual processes.”</em></p>
+<ul>
+<li><a href="https://dataingovernment.blog.gov.uk/2017/03/27/reproducible-analytical-pipeline/">‘Reproducible Analytical Pipelines’ by Matt Upson</a></li>
+</ul>
+</div>
+<p><strong>For stakeholders</strong>, there are several benefits, some of which are outlined below and covered in more detail <a href="#Stakeholder_FAQs">here</a>:</p>
 <ul>
 <li>Reduced run times and quicker updates result in more time for analysts to focus on more complex problems.</li>
 <li>Risks are reduced through robust QA</li>
@@ -171,6 +181,9 @@
 </li>
 <li>When done well, there is the potential for greater scenario testing across assumptions due to increased versatility of the model.</li>
 </ul>
+<center>
+<p><img src="pictures/replatforming.png" title="Image taken from auth0.com" style="width:50.0%" /></p>
+</center>
 </div>
 <div id="barriers-to-re-platforming" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Barriers to re-platforming</h2>
@@ -207,6 +220,7 @@ Providing that the model is well commented and well documented, the risk of it b
 <div id="should-you-re-platform" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Should you re-platform?</h2>
 <p>Before embarking on re-platforming, now that you know about the risks and potential barriers, it is important to consider whether re-platforming is really the right choice for your model.</p>
+<div class="infoboxyellow question">
 <p>Some important questions to ask yourself before moving ahead include:</p>
 <ul>
 <li>How complex is the model?</li>
@@ -216,6 +230,7 @@ Providing that the model is well commented and well documented, the risk of it b
 <li>How frequently do the required outputs change?</li>
 <li>Who needs to use the model?</li>
 </ul>
+</div>
 <p>If a model is very simple and quick to update once a year with a single, very consistent data input and a fixed output, it may not be sensible to spend time re-platforming. However, even a simple model that requires frequent data refreshes could be considered for re-platforming. Continuing along that spectrum, a more complex model with multiple inputs would definitely be a strong candidate for re-platforming.</p>
 <p>Ultimately, it’s about weighing up whether the investment in the re-platforming process is worthwhile. In a lot of instances this will be the case, even for simple models where the main benefit of re-platforming would be to improve QA. However, for some of the simplest models, or models which need to be used by a non-technical person, it might be necessary to keep the model in Excel.</p>
 

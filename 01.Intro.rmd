@@ -1,5 +1,12 @@
 # Introduction
 
+:::: {.infoboxblue .info data-latex="info"}
+**DEFINITION**
+
+Re-platforming refers to changing and updating components of an application or model to provide better scalability, user experience, security, profitability or increased functionality in the cloud.
+
+::::
+
 Over recent years Government departments have increasingly been using open source programming languages to build and run mathematical models, as well as conduct data analysis. This move towards creating reproducible workflows has a range of benefits but has resulted in a situation where some models are now being run in this new environment, whilst other older and more established models are still being run and maintained via spreadsheets or proprietary software. In this document we provide guidance on how you can determine if it would be beneficial for you to re-platform your model and give practical tips and case studies on how you can approach the move into open source software.
 
 ##  Who should read this guidance?
