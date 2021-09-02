@@ -93,12 +93,30 @@ Good documentation is a key part of knowledge management! This ensures that othe
 
 ::::
 
-QA reports can be automatically generated so these should be a key consideration when thinking about outputs, for example producing basic summary statistics, a list of checks or unit tests that have been carried out or showing totals through various steps of a process.  Various packages are available to produce documentation depending on the platform used and type of outputs needed.  
+QA reports can be automatically generated so these should be a key consideration when thinking about outputs, for example producing basic summary statistics, a list of checks or unit tests that have been carried out or showing totals through various steps of a process.  Various packages are available to produce documentation depending on the platform used and type of outputs needed.
 
-In R, Markdown can be used to create html outputs with dynamic visuals and code snippets and this can be taken one step further and published via Bookdown.  This is often done to produce reports or guidance once the code has been completed. Separate .Rmd scripts will be needed which means that if you make changes to R scripts you may also need to duplicate these in .Rmd files for example.
+Below are some useful R packages that can do this:
 
-[ROxygen](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html) overcomes the above issue as you can comment scripts as you go along and produce outputs from the scripts.  It readily supports documentation for R packages so this may be useful if you are creating bespoke functions and/or packages.  If you need to present a lot of code and less text/explanation, you may also want to consider using the [Spin function within the Knitr package](https://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/) or rendering directly from a script using the "compile notebook" button in R Studio.
+:::: {.infoboxblank .markdown data-latex="markdown"}
 
-When considering outputs, think about what your users need.  For example, an interactive dashboard output or RShiny App, such as [this](https://cars-dashboard-dwzndgiyya-ez.a.run.app/) one, would work well for scenario testing, whereas figures needed for a Business Case could be output to an Rmarkdown document or even a simple table or .csv file.  Whatever the final outputs are, you should also think about interim steps within your script as it's likely your users would previously have worked through a spreadsheet to look at parts of the calculation(s).  A comprehensive Rmarkdown with different sections replicating the Excel checkpoints would be a good way to demonstrate what your script is doing and give Stakeholders confidence in the model. 
+**RMarkdown** can be used to create html outputs with dynamic visuals and code snippets. RMarkdown can also be used to output figures needed for a Business Case, for example.  A comprehensive Rmarkdown with different sections replicating the Excel checkpoints would be a good way to demonstrate what your script is doing and give Stakeholders confidence in the model.
 
+::::
 
+:::: {.infoboxblank .bookdown data-latex="bookdown"}
+
+RMarkdown documents can be taken one step further and published via **Bookdown**.  This is often done to produce reports or guidance once the code has been completed. Separate .Rmd scripts will be needed which means that if you make changes to R scripts you may also need to duplicate these in .Rmd files for example.
+
+::::
+
+:::: {.infoboxblank .roxygen data-latex="roxygen"}
+
+**ROxygen** overcomes the above issue as you can comment scripts as you go along and produce outputs from the scripts.  It readily supports documentation for R packages so this may be useful if you are creating bespoke functions and/or packages. For more information on ROxygen, see [here](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html). If you need to present a lot of code and less text/explanation, you may also want to consider using the [Spin function within the Knitr package](https://deanattali.com/2015/03/24/knitrs-best-hidden-gem-spin/) or rendering directly from a script using the "compile notebook" button in R Studio.
+
+::::
+
+:::: {.infoboxblank .shiny data-latex="shiny"}
+
+When considering outputs, think about what your users need.  For example, an interactive dashboard output or **RShiny** App, such as [this](https://cars-dashboard-dwzndgiyya-ez.a.run.app/) one, would work well for scenario testing. There is training available for RShiny on [Analytics Academy](https://trello.com/b/QdDx3VmA/analytics-academy-an-r-training-course).
+
+::::

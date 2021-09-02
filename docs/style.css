@@ -136,3 +136,36 @@ pre code {
 .quote {
   background-image: url("pictures/quote.png");
 }
+
+.infoboxblank {
+  /* padding: "text distance from top"em "text distance from right"em "text distance from bottom"em "text distance from left"em */
+  padding: 1em 1em 1em 10em;
+  /* magin-bottom: empty space below text box */
+  margin-bottom: 10px;
+  border: 4px #ffffff;
+  border-style: dashed solid;
+  border-radius: 10px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  min-height: 120px;
+  /*colour of text*/
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.markdown {
+  background-image: url("pictures/rmarkdown.png");
+}
+
+.roxygen {
+  background-image: url("pictures/roxygen.png");
+}
+
+.shiny {
+  background-image: url("pictures/shiny.png");
+}
+
+.bookdown {
+  background-image: url("pictures/bookdown.png");
+}
