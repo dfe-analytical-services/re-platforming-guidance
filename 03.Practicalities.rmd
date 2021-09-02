@@ -4,11 +4,26 @@ Once you have determined that your model should be ported into a code-based form
 
 ## Pre-requisites
 
-To ensure a successful outcome it’s essential that several areas are addressed before re-platforming begins.  Perhaps most importantly, you will need **buy-in from stakeholders**.  [This](#stakeholders) section includes some of the most commonly asked questions from Stakeholders and as this could be one of the most difficult challenges, engaging with them early is likely to be beneficial.  
+To ensure a successful outcome, you will need to address the following areas before beginning re-platforming:
 
-Ahead of carrying out any re-platforming, you should identify who your **end users** are.  Are they analysts, managers, policy stakeholders or a combination of those?The answer to this question might influence the language you decide to use and the type of output(s) you decide to create.  Thinking about this before you start your re-platforming will help you to shape the redevelopment in the best way.  It should be one of the first steps of your planning as the answer will impact your requirements, which will in turn feed into your resource and skill requirements.  
+* Secure **buy-in from stakeholders**.
+  + See [this](#stakeholder) section for some of the most commonly asked questions from Stakeholders. Make sure to engage with them early as this could be one of the most difficult challenges.
 
-Once you have secured Stakeholder buy-in and identified your end-users, ensuring there is sufficient time and appropriate resource dedicated to the project is vital. As with any piece of analysis, a rushed job is more likely to be a poor job. This could mean postponing Business As Usual work, existing model updates and/or securing additional resource.  But, however tempting it might be to 'contract out' the re-platforming to experts who then hand 'it' over, this is *not* recommended as without _a lot_ of collaboration, you're likely to end up with a team who do not understand the model.  Therefore, the analysts who will carry out the re-platform need to have sufficient software knowledge for the chosen platform.  This might mean they need to undertake L&D activities are needed and/or engage with experts and relevant groups for advice and support (for example, the DfE Analyst Network Data Science channel or Python Team), particularly in the event that any difficulties are encountered. 
+* Identify **end users**.
+  + Are they analysts? Managers? Policy stakeholders? A combination of all of those?
+  + Identifying end users will influence the language you use and the output(s) you decide to create.
+  + Thinking about this prior to re-platforming will enable you to shape the redevelopment in the best way.
+
+:::: {.infoboxred .exclamation data-latex="exclamation"}
+
+What impact will the re-platforming have on end-users? Will they be find using the model easier? Quicker? Will there be more functionality? Most importantly - are you making things better?
+
+::::
+
+* Ensure there is **sufficient time and appropriate resource**.
+  + A rushed job is more likely to be a poor job. You may have to postpone Business As Usual work, postpone existing model updates or secure additional resource.
+  + However tempting it might be to 'contract out' the re-platforming to experts who then hand it over, this is *not* recommended. Without _a lot_ of collaboration, you're likely to end up with a team who do not understand the model.
+  + The analysts who will carry out the re-platform need to have sufficient software knowledge for the chosen platform. This might mean they need to undertake L&D activities and/or engage with experts and relevant groups for advice and support (for example, the DfE Analyst Network Data Science channel or Python Team).
 
 ## Design choices
 

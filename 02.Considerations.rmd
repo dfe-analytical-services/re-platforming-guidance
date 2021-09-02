@@ -44,7 +44,7 @@ A final potential benefit of re-platforming is that it can be used to develop sk
 
 ::::
 
-**For stakeholders**, there are several benefits, some of which are outlined below and covered in more detail [here](#Stakeholder_FAQs):
+**For stakeholders**, there are several benefits, some of which are outlined below and covered in more detail [here](#stakeholder):
 
 * Reduced run times and quicker updates result in more time for analysts to focus on more complex problems.
 * Risks are reduced through robust QA
