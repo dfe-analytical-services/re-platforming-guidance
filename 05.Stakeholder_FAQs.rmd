@@ -1,10 +1,14 @@
 # Stakeholder FAQs {#stakeholder}
 
-This section covers the key questions Stakeholders may have over the course of a re-platforming project.  It is written primarily for Stakeholders but analysts may also find it useful to think about the questions their Stakeholders may have and how they can work together to develop confidence and secure buy-in to the re-platformed model.
+:::: {.infoboxyellow .question}
+
+This section is written primarily for stakeholders and covers FAQs about re-platforming models.  Analysts may also find it useful to think about the questions their stakeholders may have and how they can work together to develop confidence and secure buy-in to the re-platformed model.
+
+::::
 
 **What _is_ re-platforming?**
 
-Re-platforming is the process of converting a model from a piece of software to a code-based platform.  In practice, that usually means turning an Excel model into one which runs using code.  Within DfE, the most commonly used coding languages are R, SQL and Python and a re-platform may involve a combination of the two, particularly R and SQL together.   
+Re-platforming is the process of moving a model from one platform to another. This could mean converting a piece of software to a code-based platform, such as turning an Excel model into one which runs using code.  Within DfE, the most commonly used coding languages are R, SQL and Python. A re-platform may involve a combination of the two, particularly R and SQL together.   
 
 **Do I need to be able to understand code to understand a re-platformed model?**
 

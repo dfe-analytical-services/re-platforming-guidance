@@ -13,12 +13,13 @@ testing-and-version-control
 documentation-and-outputs
 case_studies
 schools-block-national-funding-formula-model-sb-nff
-model-details
+why-should-we-re-platform
+what-are-the-barriers-to-re-platforming
 replatform-details
 benefits
 practical-tips-from-the-team
 student-loan-earnings-model
-model-details-1
+why-should-we-re-platform-1
 replatform-details-1
 benefits-1
 technical-tips

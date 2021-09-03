@@ -21,10 +21,10 @@
   <meta name="twitter:description" content="DfE guide to replatforming models." />
   
 
-<meta name="author" content="Eugene Chang and Leanne Sunter" />
+<meta name="author" content="Eugene Chang and Leanne Sunter, Edited by Thomas Morley" />
 
 
-<meta name="date" content="2021-09-02" />
+<meta name="date" content="2021-09-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -68,7 +68,7 @@
 
 <ul class="summary">
 <li class="toc-logo"><a href="./"><img src="pictures/qa_logo.png"></a></li>
- <li><a target="blank">DfE re-platforming models guidance</a></li>
+ <center><a><font size="3"><b>DfE re-platforming models guidance</b></font></a></center>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
@@ -97,14 +97,15 @@
 <ul>
 <li class="chapter" data-level="4.1" data-path="case-studies.html"><a href="case-studies.html#schools-block-national-funding-formula-model-sb-nff"><i class="fa fa-check"></i><b>4.1</b> Schools Block National Funding Formula Model (SB NFF)</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="case-studies.html"><a href="case-studies.html#model-details"><i class="fa fa-check"></i><b>4.1.1</b> Model details</a></li>
-<li class="chapter" data-level="4.1.2" data-path="case-studies.html"><a href="case-studies.html#replatform-details"><i class="fa fa-check"></i><b>4.1.2</b> Replatform details</a></li>
-<li class="chapter" data-level="4.1.3" data-path="case-studies.html"><a href="case-studies.html#benefits"><i class="fa fa-check"></i><b>4.1.3</b> Benefits</a></li>
-<li class="chapter" data-level="4.1.4" data-path="case-studies.html"><a href="case-studies.html#practical-tips-from-the-team"><i class="fa fa-check"></i><b>4.1.4</b> Practical tips from the team</a></li>
+<li class="chapter" data-level="4.1.1" data-path="case-studies.html"><a href="case-studies.html#why-should-we-re-platform"><i class="fa fa-check"></i><b>4.1.1</b> Why should we re-platform?</a></li>
+<li class="chapter" data-level="4.1.2" data-path="case-studies.html"><a href="case-studies.html#what-are-the-barriers-to-re-platforming"><i class="fa fa-check"></i><b>4.1.2</b> What are the barriers to re-platforming?</a></li>
+<li class="chapter" data-level="4.1.3" data-path="case-studies.html"><a href="case-studies.html#replatform-details"><i class="fa fa-check"></i><b>4.1.3</b> Replatform details</a></li>
+<li class="chapter" data-level="4.1.4" data-path="case-studies.html"><a href="case-studies.html#benefits"><i class="fa fa-check"></i><b>4.1.4</b> Benefits</a></li>
+<li class="chapter" data-level="4.1.5" data-path="case-studies.html"><a href="case-studies.html#practical-tips-from-the-team"><i class="fa fa-check"></i><b>4.1.5</b> Practical tips from the team</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="case-studies.html"><a href="case-studies.html#student-loan-earnings-model"><i class="fa fa-check"></i><b>4.2</b> Student Loan Earnings Model</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="case-studies.html"><a href="case-studies.html#model-details-1"><i class="fa fa-check"></i><b>4.2.1</b> Model details</a></li>
+<li class="chapter" data-level="4.2.1" data-path="case-studies.html"><a href="case-studies.html#why-should-we-re-platform-1"><i class="fa fa-check"></i><b>4.2.1</b> Why should we re-platform?</a></li>
 <li class="chapter" data-level="4.2.2" data-path="case-studies.html"><a href="case-studies.html#replatform-details-1"><i class="fa fa-check"></i><b>4.2.2</b> Replatform details</a></li>
 <li class="chapter" data-level="4.2.3" data-path="case-studies.html"><a href="case-studies.html#benefits-1"><i class="fa fa-check"></i><b>4.2.3</b> Benefits</a></li>
 <li class="chapter" data-level="4.2.4" data-path="case-studies.html"><a href="case-studies.html#technical-tips"><i class="fa fa-check"></i><b>4.2.4</b> Technical tips</a></li>
@@ -142,48 +143,82 @@
 </div>
 <div id="case_studies" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Case Studies</h1>
-<p>The case studies included in this guide were identified through a cross-Department working group. This covered analysts who were new to code-based models who had to learn R and ask experts to help up to those who were already experts in this area so we hope that the case studies showcased will provide useful learning points for everybody, no matter where you are in your learning journey. We hope to include additional case studies in future so please <a href="mailto:modellingandqa@Educationgovuk.onmicrosoft.com">get in touch</a> if you would like to add yours!</p>
+<div class="infoboxblue info">
+<p>The case studies included in this guide were identified through a cross-Department working group. This covered analysts who were new to code-based models up to those who were already experts in this area. We hope that the case studies showcased will provide useful learning points for everybody, no matter where you are in your learning journey. We hope to include additional case studies in future so please <a href="mailto:modellingandqa@Educationgovuk.onmicrosoft.com">get in touch</a> if you would like to add yours!</p>
+</div>
+<p>In this chapter:</p>
+<p><a href="case-studies.html#schools-block-national-funding-formula-model-sb-nff">Schools Block National Funding Formula Model (SB NFF)</a> : Re-platforming from Excel to R due to amount of data being processed.</p>
+<p><a href="case-studies.html#student-loan-earnings-model">Student Loan Earnings Model</a> : A more technical case study looking at how re-platforming challenged the model’s methodology.</p>
 <div id="schools-block-national-funding-formula-model-sb-nff" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> Schools Block National Funding Formula Model (SB NFF)</h2>
-<p>The SB NFF model carries out funding allocations for the schools block element of the Dedicated Schools Grant. Individual schools and pupil characteristics are used to underpin the formula allocation for more than 20,000 schools which meant that running the model in Excel involved several linked workbooks and data processing and manipulation in other files. Whilst there was a really good analytical argument to be made for re-platforming this model due to the technical challenges, one of the <em>biggest barriers</em> was that policy colleagues were initially reluctant for a re-platform as they wanted to be able to interact with the model themselves.</p>
-<div id="model-details" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Model details</h3>
-<p>The schools block NFF Excel spreadsheet model often took most of a day for two analysts to update new changes for scenario costing. It was also very prone to error given the number of manual interventions required therefore the aim of the re-platform was to create a cleaner pipeline for scenario costing.</p>
+<p>The SB NFF model carries out funding allocations for the schools block element of the Dedicated Schools Grant. Formulae within the model are underpinned by individual schools and pupil characteristics for more than 20,000 schools.</p>
+<div id="why-should-we-re-platform" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Why should we re-platform?</h3>
+<p>Running the model in Excel involves several linked workbooks and data processing/manipulation in other files. The model often took most of a day for two analysts to update new changes for scenario costing. It was also very prone to error given the number of manual interventions required. The aim of the re-platform was to create a cleaner pipeline for scenario costing.</p>
 </div>
-<div id="replatform-details" class="section level3" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Replatform details</h3>
-<p>The first phase of the re-platform took a few months of a single analysts time to create the initial model, alongside Business As Usual work. At this stage it was a “third-build” model and the analyst was able to match outputs from the existing model to fully QA’ed models to ensure the R model was working correctly.</p>
+<div id="what-are-the-barriers-to-re-platforming" class="section level3" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> What are the barriers to re-platforming?</h3>
+<p>One of the <em>biggest barriers</em> was that policy colleagues were initially reluctant for a re-platform as they wanted to be able to interact with the model themselves.</p>
+</div>
+<div id="replatform-details" class="section level3" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> Replatform details</h3>
+<p>There were two phases to the re-platform.</p>
+<p>The first phase of the re-platform saw a single analyst create the initial model in R. This took a few months, alongside “Business as Usual” work. As this was a “third-build” model, the analyst was able to match outputs from the existing model to fully QA’ed models to ensure the R model was working correctly.</p>
 <p>The second phase of the re-platform involved other members of the team implementing further QA and error checking into the model. An important change that was needed at this stage was a restructure of the code to allow for an Rmarkdown document to be created for policy colleagues. This was created iteratively, with a lot of engagement from working level policy colleagues in order to capture the right level of detail in an easy to understand way before taking more senior stakeholders and the model SRO through the walkthrough for sign-off. After this, the R model became their main model for the following allocation cycle.</p>
 </div>
-<div id="benefits" class="section level3" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Benefits</h3>
-<p>There were immediate benefits from the first phase - updating the model parameters became easier on the new platform than in Excel. Other analysts in the team who took on the rest of the NFF re-development were totally new to R but had experience of other languages. They were able to use what had been done in the first phase to learn the language in a hands-on way by developing the next phase.</p>
-<p>The model is now much more efficient, running in seconds rather than tens of minutes. The new model can query directly to SQL compared to the previous Excel model, which required generating/exporting code, then loading the data in. This was a really big improvement and <em>greatly enhances QA</em> as the SQL query is directly within the model therefore it’s transparent <em>and</em> by querying the data directly it removes risk of both copying and pasting errors or using the wrong file.</p>
-<p>The team is now much better equipped and more efficient in their support to policy colleagues with development of the formula. The re-platformed model meant the team were able to provide better support to last year’s SR because it was much quicker and easier to run scenarios and using the skills they’d developed, analysts produced an output dashboard that included a number of different comparisons and breakdowns, which helped the policy team understand and communicate the impact of a particular funding scenario.</p>
-<p>The team use repos within Azure DevOps and git for tracking changes and version control. This has improved governance of the model, commissioning QA task processes and their ability to work on a single model collaboratively. The NFF team have also used their new R skills to produce other dashboards and tools using R and RShiny to support the policy team with correspondence, PMQs. etc</p>
-<p>There have also been wider benefits too. The knowledge developed from the model re-platform has been used in subsequent model development across the division as well.</p>
-</div>
-<div id="practical-tips-from-the-team" class="section level3" number="4.1.4">
-<h3><span class="header-section-number">4.1.4</span> Practical tips from the team</h3>
+<div id="benefits" class="section level3" number="4.1.4">
+<h3><span class="header-section-number">4.1.4</span> Benefits</h3>
 <ul>
-<li><p>Training - On moving to R, team members had different levels of expertise, learning trajectories and amounts of time available to dedicate to on-the-job learning. There wasn’t a structured plan for what needed to be learnt, and training was very self-directed, which was manageable but tricky. Having an agreement in place for what fundamental learning needs to take place and allowing time for that training to be undertaken would be helpful for any re-platforming project.</p></li>
-<li><p>Governance - There were concerns from the policy team about whether they’d be able to understand the model and whether they’d ever have enough confidence in it to sign it off. The SRO would normally be walked through the Excel model step by step so the team had to think carefully about how to retain similar confidence in the R model. They achieved this by highlighting the benefits of re-platforming and by providing walkthroughs of key chunks of the code. But, it did take some effort from both sides – analysts needed to make sure code was clearly written and reasonably accessible, and the policy team needed to put in some effort to understand and follow a code-based model walkthrough. Thinking about how the re-platformed model would impact governance processes (e.g. dual builds, policy walkthroughs) and how to manage those changes was really important.</p></li>
-<li><p>Resilience - Whilst there is a move towards using R more widely in DfE, it’s still something many people are learning and levels of expertise vary. This needs to be kept in mind when developments are made to the model and as the team upskills further. The team need to consider whether they can expect someone else coming into the team to be able to pick up the modelling and how much training they will need. Potentially this has its advantages as there is a good amount of technical and non-technical development to be had from working in their team, but it’s something they need to bear in mind when making any substantive developments.</p></li>
+<li><strong>Easier to update</strong>
+<ul>
+<li>Updating the model parameters became easier on the new platform than in Excel.</li>
+</ul></li>
+<li><strong>More efficient</strong>
+<ul>
+<li>The model is now much more efficient, running in seconds rather than tens of minutes.</li>
+</ul></li>
+<li><strong>Better QA</strong>
+<ul>
+<li>The new model can query directly to SQL compared to the previous Excel model, which required generating/exporting code, then loading the data in. The SQL query is directly within the model and is therefore transparent, greatly enhancing QA. By querying the data directly, it removes risk of both copying and pasting errors or using the wrong file.</li>
+</ul></li>
+<li><strong>Improved knowledge transfer</strong>
+<ul>
+<li>Other analysts in the team who took on the rest of the NFF re-development were totally new to R but had experience of other languages. They were able to use what had been done in the first phase to learn the language in a hands-on way by developing the next phase. The NFF team have also used their new R skills to produce other dashboards and tools using R and RShiny to support the policy team with correspondence, PMQs. etc</li>
+</ul></li>
+<li><strong>Better support to policy colleagues</strong>
+<ul>
+<li>The re-platformed model meant the team were able to provide better support to the following year’s SR because it was much quicker and easier to run scenarios. Analysts were able to produce an output dashboard that included a number of different comparisons and breakdowns. This helped the policy team understand and communicate the impact of a particular funding scenario.</li>
+</ul></li>
+<li><strong>Better version control</strong>
+<ul>
+<li>The team use repos within Azure DevOps and git for tracking changes and version control. This has improved governance of the model, commissioning QA task processes and their ability to work on a single model collaboratively.</li>
+</ul></li>
 </ul>
+</div>
+<div id="practical-tips-from-the-team" class="section level3" number="4.1.5">
+<h3><span class="header-section-number">4.1.5</span> Practical tips from the team</h3>
+<p class="bubble thought">
+<strong>Training</strong> - On moving to R, team members had different levels of expertise, learning trajectories and amounts of time available to dedicate to on-the-job learning. There wasn’t a structured plan for what needed to be learnt, and training was very self-directed, which was manageable but tricky. Having an agreement in place for what fundamental learning needs to take place and allowing time for that training to be undertaken would be helpful for any re-platforming project.
+</p>
+<p class="bubble thought">
+<strong>Governance</strong> - There were concerns from the policy team about whether they’d be able to understand the model and have enough confidence in it to sign it off. To overcome this, the analysts highlighted the benefits of re-platforming and provided walkthroughs of key chunks of the code. This took some effort from both sides – analysts needed to make sure code was clearly written and reasonably accessible, and the policy team needed to put in some effort to understand and follow a code-based model walkthrough. Thinking about how the re-platformed model would impact governance processes (e.g. dual builds, policy walkthroughs) and how to manage those changes was really important.
+</p>
+<p class="bubble thought">
+<strong>Resilience</strong> - Whilst there is a move towards using R more widely in DfE, it’s still something many people are learning and levels of expertise vary. This needs to be kept in mind when making developments. The team need to consider whether they can expect someone else coming into the team to be able to pick up the modelling and how much training they will need. Potentially this has its advantages as there is a good amount of technical and non-technical development to be had from working in their team, but it’s something they need to bear in mind when making any substantive developments.
+</p>
 </div>
 </div>
 <div id="student-loan-earnings-model" class="section level2" number="4.2">
 <h2><span class="header-section-number">4.2</span> Student Loan Earnings Model</h2>
-<p>The <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811624/Student_loan_forecasts_2018-19_-_technical_notes.pdf">Student Loan Earnings Model</a> is a micro-simulation model that forecasts future annual graduate earnings at an individual level, which are used to determine future student loan repayments that the Department expects to receive on its expenditure on student loans.</p>
-<p>The model is audited externally by the National Audit Office, who maintain a shadow-build version of the model. Whilst this is needed for NAO’s own purposes, it adds value to the DfE process as well by acting as a dual build.</p>
-<p>It was re-platformed from Microsoft Excel to R over several phases, with the re-platform bringing out nuances in both the model methodology and implementation details. The process was carried out collaboratively by a small team, using version control software to track and merge changes.</p>
-<div id="model-details-1" class="section level3" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Model details</h3>
-<p>The Earnings Model forecasts future annual earnings using a collection of submodels which:</p>
+<p>The <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/811624/Student_loan_forecasts_2018-19_-_technical_notes.pdf">Student Loan Earnings Model</a> is a micro-simulation model that forecasts future annual graduate earnings at an individual level, which are used to determine future student loan repayments that the Department expects to receive on its expenditure on student loans. The Earnings Model forecasts future annual earnings using a collection of submodels which:</p>
 <ul>
 <li>For a given borrower’s characteristics and history, predict next year’s employment status (from 4 possible states),</li>
 <li>If employed, forecast earnings using the suitable regression model.</li>
 </ul>
+<p>The model is audited externally by the National Audit Office, who maintain a shadow-build version of the model. Whilst this is needed for NAO’s own purposes, it adds value to the DfE process as well by acting as a dual build.</p>
+<p>It was re-platformed from Microsoft Excel to R over several phases, with the re-platform bringing out nuances in both the model methodology and implementation details. The process was carried out collaboratively by a small team, using version control software to track and merge changes.</p>
+<div id="why-should-we-re-platform-1" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Why should we re-platform?</h3>
 <p>The Excel-based model implementation had several issues which made it complex to update and slow to run:</p>
 <ul>
 <li>It required manual extraction of data stored externally in SQL databases - the Excel spreadsheet contained sample SQL code to extract the datasets, before the data was copied to an additional tab in the workbook to be used.</li>
@@ -199,31 +234,74 @@
 <p>They started by copying the workflow from the existing implementation<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> - following the logic of calculation steps displayed within the cell formulae of the Excel spreadsheet, and incrementally ported each calculation step of the methodology across.</p>
 <p>As part of the re-platform, lookup tables from Excel were exported as datasets but external SQL databases were queried directly from the re-platformed model. This brought several benefits including ensuring changes to the code were only needed in one place, reducing the risk of copying and pasting errors by accessing the data directly and allowing the entire dataset to be used within the model, instead of only a small sample.</p>
 <p>The team used version control within an Azure DevOps repo to carry out continuous code review during development. This meant that quality assurance occurred incrementally - potentially eliminating the need for a detailed ‘full’ quality assurance after the re-platform was completed. However, wider <a href="https://dfe-analytical-services.github.io/good-code-practice/testing.html#unit-testing">unit testing</a> may have been beneficial to provide assurance of the end to end process.</p>
-<p>One reocurring issue was whether the model methodology should be improved at the point of the re-platform, or whether it should be a like-for-like implementation, with future scope for model methodology improvement. It was decided to keep a like-for-like implementation to ensure that the replatformed model behaved correctly, although the tradeoff was a slower timeline for model improvement.</p>
 <p>The re-platform was carried out prior to writing documentation. It was unclear to the team whether it was more advantageous to document along the way given the analyst time available. In hindsight this may have been a better option as it would mean analysts documenting each section they had replatformed.</p>
 </div>
 <div id="benefits-1" class="section level3" number="4.2.3">
 <h3><span class="header-section-number">4.2.3</span> Benefits</h3>
-<p>One of the biggest benefits from this re-platform is that the model can utilise the full dataset and model outcomes for individual borrowers based on their full characteristics, rather than scaling results from a modelled subsample of aggregated borrowers.</p>
-<p>In addition to this, the replatform has led to other benefits:</p>
+<ul>
+<li><strong>Can utilise full dataset</strong>
+<ul>
+<li>The model can utilise the full dataset and model outcomes for individual borrowers based on their full characteristics, rather than scaling results from a modelled subsample of aggregated borrowers.</li>
+</ul></li>
+<li><strong>Simpler model methodology</strong>
 <ul>
 <li>The model methodology is easier to understand, with model parameters and subprocesses defined in a more readable way. This makes it easier to tweak the model for model runs, and simpler for new team members familiarising themselves with the model.</li>
+</ul></li>
+<li><strong>Quicker</strong>
+<ul>
 <li>Model run times are quicker, and it is easier for a single team member to execute multiple model runs.</li>
+</ul></li>
+<li><strong>Better version control</strong>
+<ul>
 <li>A more robust version-control system is in place which means that model changes are easier to quality assure, model versions can be tracked and compared, and the model development process is more transparent for external audit.</li>
+</ul></li>
 </ul>
 </div>
 <div id="technical-tips" class="section level3" number="4.2.4">
 <h3><span class="header-section-number">4.2.4</span> Technical tips</h3>
 <p>The team found that switching to a code-based implementation led to additional questions during the re-platform, which may recur in other projects. Some of these are listed below:</p>
-<ul>
-<li>Use appropriately named functions and variable names to simplify the readability</li>
-<li>Regular checkins if multiple analysts working on code (code style/naming conventions)</li>
-<li>Camel case or snake case for functions, starting with a verb (e.g. calcNewBalance)</li>
-<li>Think about variable names - switching between SQL and R - upper case vs camel case/Pascal case</li>
-<li>Agree and decide on the optimum Git branching strategy - e.g. using merge vs rebase, fast forward history</li>
-<li>Don’t store large binary files in Git if you can help it!</li>
-<li>Consider using lists of lists to store the output data (memory issues)</li>
-<li>Consider using data.table() package over dplyr for speed with large datasets</li>
+<p><link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah&amp;subset=latin' rel='stylesheet' type='text/css'></p>
+<ul id="notes">
+<li>
+<p>
+Use appropriately named functions and variable names to simplify the readability
+</p>
+</li>
+<li>
+<p>
+Regular check-ins if multiple analysts working on code (code style/naming conventions)
+</p>
+</li>
+<li>
+<p>
+Camel case or snake case for functions, starting with a verb (e.g. calcNewBalance)
+</p>
+</li>
+<li>
+<p>
+Think about variable names - switching between SQL and R - upper case vs camel case/Pascal case
+</p>
+</li>
+<li>
+<p>
+Agree and decide on the optimum Git branching strategy - e.g. using merge vs rebase, fast forward history
+</p>
+</li>
+<li>
+<p>
+Don’t store large binary files in Git if you can help it!
+</p>
+</li>
+<li>
+<p>
+Consider using lists of lists to store the output data (memory issues)
+</p>
+</li>
+<li>
+<p>
+Consider using data.table() package over dplyr for speed with large datasets
+</p>
+</li>
 </ul>
 
 </div>

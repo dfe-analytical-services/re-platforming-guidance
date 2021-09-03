@@ -1,6 +1,6 @@
 --- 
 title: "Replatforming Models"
-author: "Eugene Chang and Leanne Sunter"
+author: "Eugene Chang and Leanne Sunter, Edited by Thomas Morley"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
